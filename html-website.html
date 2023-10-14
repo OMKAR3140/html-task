@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my webpage</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header {
+            background-color: rgb(218, 12, 40);
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+            color: blue;
+        }
+
+        nav {
+            background-color: aqua;
+            position: sticky;
+            top: 0;
+            font-size: 30px;
+            text-align: center;
+
+        }
+       
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline-block;
+            padding: 15px;
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        #aboutus {
+            text-align: center;
+
+            padding: 10px;
+        }
+
+        section h1 {
+            background-color: aqua;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        #imgs {
+            flex: 5px;
+            margin: 5px;
+        }
+        #img3{
+            background-image: url(image/car\ img.webp);
+            background-size: 100% 100vh;
+            background-position: fixed;
+            background-repeat: no-repeat;
+            flex: 10px;
+            padding: 10px;
+            font-size: 30px;
+            border: solid;
+            margin: 5px;
+            color: greenyellow;
+            height: 700px;
+        }
+
+
+        .aboutus {
+            display: flex;
+            padding: 5px;
+
+        }
+        
+
+        .service1 {
+            display: flex;
+
+        }
+
+        #iframe {
+            flex: 10;
+            padding: 5px;
+            margin: 50x;
+
+        }
+
+        .gallary1 {
+            display: flex;
+
+        }
+
+        #img2 {
+            background-color: orange;
+            flex: 10px;
+            padding: 10px;
+            font-size: 30px;
+            border: solid;
+            margin: 5px;
+
+        }
+
+        footer {
+            
+            height: 800px;
+          
+        }
+
+        footer a {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        footer h1 {
+            text-align: center;
+            background-color: aqua;
+            padding: 20px;
+        }
+    
+        
+
+        @media(max-width:700px) {
+
+            .aboutus,
+            .service1,
+            .gallary1,
+            #imgs {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#imgs">About us</a></li>
+            <li><a href="#iframe">Service</a></li>
+            <li><a href="#img2">Gallary</a></li>
+            <li><a href="#mail">Contact us</a></li>
+        </ul>
+    </nav>
+    <div id="aboutus">
+
+        <img src="image/car img.webp" width="100%" height="700px" alt="">
+    </div>
+
+    <section class="mainabout">
+        <h1>About us</h1>
+        <div class="aboutus">
+            <div id="imgs">
+                <img src="image/car img.webp" alt="" width="100%" height="600">
+            </div>
+            <div id="imgs">
+                <img src="image/bmw-m8-competition-gran-coupe-2.jpg" width="100%" height="600" alt="">
+            </div>
+            <div id="imgs">
+                <img src="image/flowers-276014_640 (1).jpg" width="100%" height="600" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="service" >
+        <h1>service</h1>
+        <div class="service1">
+            <div id="iframe">
+                <iframe width="100%" height="415" src="https://www.youtube.com/embed/NNuE1MTTbkg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div id="iframe">
+                <iframe width="100%" height="415" src="https://www.youtube.com/embed/6DHn_NBKBpw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div id="iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30573.379119922105!2d74.22579619844565!3d16.69326958870442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1003e8dd18f77%3A0x8145dfbd008c138d!2sRajarampuri%2C%20Kolhapur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1691569990066!5m2!1sen!2sin"
+                    width="100%" height="415" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+
+            </div>
+        </div>
+    </section>
+    
+    <section class="gallary" id="gal">
+        <h1>Gallary</h1>
+        <div class="gallary1">
+            <div id="img2">
+
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum beatae magni provident quo quam non
+                distinctio aut adipisci ipsum, neque veritatis voluptate possimus, laborum accusamus repellendus vitae.
+                Earum, nesciunt illum.
+                Doloremque autem officia ad, consectetur velit consequatur rem quod nulla magni consequuntur molestiae
+                modi amet similique vero minima a quidem, nisi doloribus iure dignissimos omnis? Soluta doloremque id
+                error sunt.
+                Commodi laborum optio sit unde dicta tenetur quasi laboriosam eius, illo veniam earum rerum labore
+                accusamus debitis cumque. Neque deserunt ipsa consequuntur optio dolores saepe ipsum est repudiandae
+                accusantium rem!
+                Quis consectetur, dolores expedita, dolore, fugiat nihil eaque architecto officia harum amet at quam
+                possimus corporis temporibus hic ducimus assumenda distinctio cum animi quaerat vero veritatis ullam
+                illum eligendi. Esse.
+                Itaque vel deserunt maxime eum molestiae consectetur voluptatum. Aut minus possimus quae aliquid, rem
+                quasi mollitia obcaecati quibusdam reiciendis consectetur soluta quod laudantium alias repudiandae
+               
+            </div>
+            <div id="img2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nobis consectetur velit necessitatibus
+                nesciunt. Tempore dolores enim temporibus illo in esse nisi incidunt, doloremque harum, libero eos
+                nobis. Quis, odit!
+                Quidem repudiandae aut eveniet rem, at error repellat eligendi qui iusto porro deserunt nostrum facere
+                aspernatur recusandae adipisci minus quisquam distinctio magnam ad. Neque, vitae harum. Corrupti vitae
+                exercitationem aliquam?
+                Magnam, fugiat ex. Modi exercitationem sit dolores, vero nobis quaerat quibusdam aspernatur ab delectus
+                incidunt nesciunt quis harum quas ex eveniet quae. Minus, alias modi eaque expedita odit reprehenderit
+                temporibus.
+                Fugit, nobis nemo ad animi fugiat, corrupti inventore adipisci neque sed nisi excepturi placeat,
+                molestias esse voluptatibus. Molestiae fugiat soluta cupiditate perspiciatis voluptas ea et tempore. Sed
+                architecto eaque odit.
+                At voluptates esse reiciendis optio consequuntur consequatur tempora sint quae? Deleniti at ex suscipit
+                eum aut aperiam est voluptatum nulla maiores tenetur error quos hic amet quo vitae, autem numquam.
+            </div>
+
+            <form id="img3">
+                <h2>Introduction Form</h2>
+                <label>First Name:</label>
+                <input type="name" placeholder="First Name"><br>
+                <br>
+                <label>Last Name:</label>
+                <input type="text" placeholder="Last Name"><br>
+                <br>
+                <label>Gender: <input type="radio" Name:"gender">Male</label>
+                <label><input type="radio" Name:"gender">female</label><br>
+                <br>
+                <label>Email: <input type="Email" placeholder="Enter Email"></label><br>
+                <br>
+                <label>Date Of Birth: <input type="datetime-local"></label><br>
+                <br>
+                <h3>Address:</h3>
+                <label><textarea name="" id="" cols="30" rows="10"></textarea></label>
+                <hr>
+                <button>submit</button>
+
+            </form>
+
+
+        </div>
+    </section>
+    <footer>
+        <h1>Contact Us</h1>
+        <div id="mail">
+            <a href="mailto:ob1022246@fmail.com">send mail</a><br>
+            <a href="tel:9579813140">Contact</a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
